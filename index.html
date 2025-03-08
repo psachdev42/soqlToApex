@@ -215,7 +215,7 @@
                 const type = row.cells[1].querySelector("select").value;
                 const checked = row.cells[2].querySelector("input").checked;
                 if (checked) {
-                    apexCode += `fndGrpRec.${field} = ${generateRandomValue(type)};\n`;
+                    apexCode += `record.${field} = ${generateRandomValue(type)};\n`;
                 }
             });
             document.getElementById("apexOutput").value = apexCode;
